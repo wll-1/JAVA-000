@@ -1,0 +1,77 @@
+Classfile /K:/JAVA-000/JAVA-000/Week_01/java/HelloByteCode.class
+  Last modified 2020-10-17; size 442 bytes
+  MD5 checksum c6300e2079aad675cb3bdb20396c4c42
+  Compiled from "HelloByteCode.java"
+public class HelloByteCode implements HelloInterface
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #6.#18         // java/lang/Object."<init>":()V
+   #2 = Class              #19            // HelloByteCode
+   #3 = Methodref          #2.#18         // HelloByteCode."<init>":()V
+   #4 = Methodref          #2.#20         // HelloByteCode.hello:()LHelloEnum;
+   #5 = Fieldref           #21.#22        // HelloEnum.HELLO:LHelloEnum;
+   #6 = Class              #23            // java/lang/Object
+   #7 = Class              #24            // HelloInterface
+   #8 = Utf8               <init>
+   #9 = Utf8               ()V
+  #10 = Utf8               Code
+  #11 = Utf8               LineNumberTable
+  #12 = Utf8               main
+  #13 = Utf8               ([Ljava/lang/String;)V
+  #14 = Utf8               hello
+  #15 = Utf8               ()LHelloEnum;
+  #16 = Utf8               SourceFile
+  #17 = Utf8               HelloByteCode.java
+  #18 = NameAndType        #8:#9          // "<init>":()V
+  #19 = Utf8               HelloByteCode
+  #20 = NameAndType        #14:#15        // hello:()LHelloEnum;
+  #21 = Class              #25            // HelloEnum
+  #22 = NameAndType        #26:#27        // HELLO:LHelloEnum;
+  #23 = Utf8               java/lang/Object
+  #24 = Utf8               HelloInterface
+  #25 = Utf8               HelloEnum
+  #26 = Utf8               HELLO
+  #27 = Utf8               LHelloEnum;
+{
+  public HelloByteCode();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #2                  // class HelloByteCode
+         3: dup
+         4: invokespecial #3                  // Method "<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #4                  // Method hello:()LHelloEnum;
+        12: pop
+        13: return
+      LineNumberTable:
+        line 4: 0
+        line 5: 8
+        line 6: 13
+
+  public HelloEnum hello();
+    descriptor: ()LHelloEnum;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #5                  // Field HelloEnum.HELLO:LHelloEnum;
+         3: areturn
+      LineNumberTable:
+        line 11: 0
+}
+SourceFile: "HelloByteCode.java"
